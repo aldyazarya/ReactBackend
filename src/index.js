@@ -263,7 +263,7 @@ app.delete("/users/:userId/delete", async (req, res) => {
 });
   
 app.get('/', (req, res) => {
-    res.send(`<h1>API Running on Heroku</h1>`)
+    res.send(`<h1>API Running on Heroku ${port}</h1>`)
 })
 
 app.listen(port, () => console.log("API Running on port" + port))
